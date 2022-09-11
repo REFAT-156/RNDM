@@ -16,17 +16,17 @@ bit = platform.architecture()[0]
  
 if bit == "64bit":
  
-        from rndm64 import rs
+        from rndm64 import Main
  
-        rs()
+        Main()
  
  
  
 elif bit == "32bit":
  
-        from rndm32 import rs
+        from rndm32 import Main
  
  
-        rs()
+        Main()
  
  
