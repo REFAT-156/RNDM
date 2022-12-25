@@ -16,7 +16,7 @@ bit = platform.architecture()[0]
  
 if bit == "64bit":
  
-        from xoss import Main
+        from rndm import Main
  
         Main()
  
