@@ -16,7 +16,7 @@ bit = platform.architecture()[0]
  
 if bit == "64bit":
  
-        from rndm import Main
+        from refat import Main
  
         Main()
  
@@ -24,7 +24,7 @@ if bit == "64bit":
  
 elif bit == "32bit":
  
-        from joss import Main
+        from refat import Main
  
  
         Main()
