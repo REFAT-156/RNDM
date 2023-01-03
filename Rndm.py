@@ -1,17 +1,18 @@
-import os,platform,time
- 
-bitt=platform.architecture()[0]
- 
-if bitt=="32bit":
-    print('[!] YOUR DEVICE IS 32 BIT');time.sleep(1);print('\n\n[!] YOUR PYTHON VERSION :');time.sleep(1);os.system('[!] python --version')
-    time.sleep(2)
-    import refat.Main
- 
- 
-elif bitt=="64bit":
-    os.system('clear');print('[!] YOUR DEVICE IS 32 BIT');time.sleep(1);print('\n\n[!] YOUR PYTHON VERSION :');time.sleep(1);os.system('[!] python --version')
-    time.sleep(2)
-    import refat.Main
- 
-else:
-    print('\nUNKNOWN DEVICE')
+import os, platform, time
+print('\n\x1b[1;37m[•] Checking Update...');time.sleep(0.5)
+os.system('git pull')
+def Run():
+        bit = platform.architecture()[0]
+        if bit == '64bit':
+            print("\x1b[1;92m[•] Congratulations ! Your Device Support this Tools")
+            print('[•] Follow My Github First')
+            os.system('xdg-open https://github.com/REFAT-156')
+            import refat
+        elif bit == '32bit':
+            print("\n\x1b[1;92m[•] Congratulations ! Your Device Support this Tools")
+            print('[•] Follow My Github First')
+            os.system('xdg-open https://github.com/REFAT-156')
+            import refat
+        else:
+            exit('\033[1;31m[×] Connection Error')
+main()
