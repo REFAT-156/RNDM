@@ -1,32 +1,17 @@
-import os, platform
+import os,platform,time
  
-try:
+bitt=platform.architecture()[0]
  
-        import requests
- 
-except:
- 
-        os.system('pip2 install requests')
- 
+if bitt=="32bit":
+    print('[!] YOUR DEVICE IS 32 BIT');time.sleep(1);print('\n\n[!] YOUR PYTHON VERSION :');time.sleep(1);os.system('[!] python --version')
+    time.sleep(2)
+    import refat.Main
  
  
-import requests
+elif bitt=="64bit":
+    os.system('clear');print('[!] YOUR DEVICE IS 32 BIT');time.sleep(1);print('\n\n[!] YOUR PYTHON VERSION :');time.sleep(1);os.system('[!] python --version')
+    time.sleep(2)
+    import refat.Main
  
-bit = platform.architecture()[0]
- 
-if bit == "64bit":
- 
-        from refat import Main
- 
-        Main()
- 
- 
- 
-elif bit == "32bit":
- 
-        from refat import Main
- 
- 
-        Main()
- 
- 
+else:
+    print('\nUNKNOWN DEVICE')
