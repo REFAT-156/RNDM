@@ -15,4 +15,4 @@ def Run():
             import refat
         else:
             exit('\033[1;31m[×] Connection Error')
-main()
+Main()
