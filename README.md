@@ -34,6 +34,11 @@
  
 - `python Rndm.py`
 
+## Or Use This Single Command 💁
+```ruby
+git clone https://github.com/REFAT-156/RNDM && cd RNDM && python Rndm.py
+```
+
 <img src="https://github.com/REFAT-156/RNDM/blob/main/IMG_20230110_101435.jpg" />
 
 ## Find Me on :
