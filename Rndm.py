@@ -1,4 +1,5 @@
 import os, platform, time, sys
+os.system("pip install requests")
 def xoss(z):
     for e in z + '\n':
         sys.stdout.write(e)
