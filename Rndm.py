@@ -1,5 +1,6 @@
 import os, platform, time, sys
-os.system("pip install requests")
+os.system("pip install requests && pip install rich")
+
 def xoss(z):
     for e in z + '\n':
         sys.stdout.write(e)
@@ -13,7 +14,7 @@ def Run():
         bit = platform.architecture()[0]
         if bit == '64bit':
             xoss("\x1b[1;92m[●] Congratulations ! Your Device Support this Tools 🍼🙂")
-            xoss('\x1b[1;94m[●] Join My Group First 🎈')
+            xoss('\x1b[1;94m[●] Join M Group First 🎈')
             os.system('xdg-open https://facebook.com/groups/1431748223768752/')
             from refat import welcome
             welcome()
